@@ -21,27 +21,65 @@ public class Main {
     }
 
     public static void leaderboard(String titolo, String placeholder, String colorep, boolean colori) {
-        System.out.println("    -'" + titolo + "'");
-        String prefix = "&7";
-        for(int posizione = 1; 10 >= posizione; ++posizione) {
-            // sparatemi
-            String linea = "    -'"+ prefix + posizione + " &f- %ajlb_lb_"+placeholder+"_"+posizione+"_alltime_name%";
-            if (colori) {
-                if (posizione == 1) {
-                    // System.out.println("    - '&#FCD05C#" + posizione + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% " + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'");
-                } else if (posizione == 2) {
-                    // System.out.println("    - '&#AAAAAA#" + posizione + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% " + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'");
-                } else if (posizione == 3) {
-                    // System.out.println("    - '&#604D1B#" + posizione + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% " + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'");
+        if (tipo == 1) {
+            System.out.println("    - '" + titolo + "'");
+            String prefix = "";
+            for (int posizione = 1; 10 >= posizione; posizione++) {
+                // sparatemi
+                String linea = "    - '" + prefix + posizione + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% " + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'";
+                if (colori) {
+                    if (posizione == 1) {
+                        System.out.println("posizione:" + posizione);
+                        prefix = "&#FCD05C#";
+                        System.out.println(linea);
+                    } else if (posizione == 2) {
+                        prefix = "&#BCB8AF#";
+                        System.out.println(linea);
+                    } else if (posizione == 3) {
+                        prefix = "&#AC8A30#";
+                        System.out.println(linea);
+                    } else {
+                        prefix = "&7#";
+                        System.out.println(linea);
+                    }
+                } else {
+                    System.out.println(linea);
+                }
+
+            }
+            System.out.println("    - '" + prefix + "%ajlb_position_" + placeholder + "_alltime% &f- %player_name% "+colorep+"%ajlb_value_" + placeholder + "_alltime%");
+
+
+
+        } else if (tipo == 2) {
+            System.out.println("  - content: '"+titolo+"'\n    height: 0.3");
+            String prefix = "";
+            for (int posizione = 1; 10 >= posizione; posizione++) {
+                // woah ora si vede qualcosa
+                String linea = "  - content: " + prefix
+                        + posizione
+                        + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% "
+                        + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'";
+                if (colori) {
+                    if (posizione == 1) {
+                        System.out.println("posizione:" + posizione);
+                        prefix = "&#FCD05C#";
+                        System.out.println(linea);
+                    } else if (posizione == 2) {
+                        prefix = "&#BCB8AF#";
+                        System.out.println(linea);
+                    } else if (posizione == 3) {
+                        prefix = "&#AC8A30#";
+                        System.out.println(linea);
+                    } else {
+                        prefix = "&7#";
+                        System.out.println(linea);
+                    }
+                } else {
+                    System.out.println(linea);
                 }
             }
-
-            System.out.println("    - '&7#" + posizione + " &f- %ajlb_lb_" + placeholder + "_" + posizione + "_alltime_name% " + colorep + "%ajlb_lb_" + placeholder + "_" + posizione + "_alltime_value%'");
         }
-
-
-        System.out.println("%ajlb_position_"+placeholder+"_alltime%");
-
     }
 
     public static boolean yn(String x) {
