@@ -6,4 +6,5 @@ per FancyHolograms e DecentHolograms
 
 ## Come usare
 Aprire un terminare ed eseguire:
+
 `java -jar leaderboard-maker-1.0.jar`
