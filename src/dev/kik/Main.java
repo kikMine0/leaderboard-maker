@@ -72,4 +72,13 @@ public class Main {
     public static void leaderboard(ArrayList<String> valori){
 
     }
+
+
+
+    // https://www.baeldung.com/java-clipboard-copy-paste-text
+    public static void copyToClipboard(String text) {
+        Clipboard cb = Toolkit.getDefaultToolkit().getSystemClipboard();
+        StringSelection data = new StringSelection(text);
+        cb.setContents(data, null);
+    }
 }
