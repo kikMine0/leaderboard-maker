@@ -33,9 +33,11 @@ public class Main {
 
         placeholder.createInputPrompt().name("placeholder")
                 .message("Inserire il placeholder")
+                .defaultValue("place_hold_er")
                 .addPrompt();
         colori.createInputPrompt().name("colori")
                 .message("Che colore dovrebbero essere i valori della leaderboard?")
+                .defaultValue("&a")
                 .addPrompt();
                 // Claude -> mixare SearchPrompt con InputPrompt
                 // Ci starebbe molto avere quelli di default nella lista coloriMC e poi tutti i colori HEX
@@ -50,9 +52,11 @@ public class Main {
 //                })
          titolo.createInputPrompt().name("titolo")
                 .message("Inserire titolo leaderboard")
+                 .defaultValue("Classifica x")
                 .addPrompt();
          coloritop.createConfirmPrompt().name("coloritop")
                 .message("I top 3 dovrebbero avere colori della posizione differenti?")
+                 .defaultValue(true)
                 .addPrompt();
 
         ArrayList<String> risultati = new ArrayList<>();
