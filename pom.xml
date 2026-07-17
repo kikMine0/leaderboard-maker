@@ -12,6 +12,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.jline</groupId>
+            <artifactId>jline</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <sourceDirectory>src</sourceDirectory>
