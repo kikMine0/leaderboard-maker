@@ -105,6 +105,7 @@ public class Main {
                 System.out.println(linea);
 
             }
+            System.out.println("  - content: '&f'\n    height: 0.3");
             System.out.println("    - '" + prefix + "%ajlb_position_" + placeholder + "_alltime% &f- %player_name% " + colorep + "%ajlb_value_" + placeholder + "_alltime%");
 
 
