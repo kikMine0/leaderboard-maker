@@ -6,7 +6,7 @@
 
     <groupId>com.kik</groupId>
     <artifactId>leaderboard-maker</artifactId>
-    <version>1.1</version>
+    <version>1.0</version>
     <name>Leaderboard Maker</name>
 
     <properties>

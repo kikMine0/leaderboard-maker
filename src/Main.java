@@ -33,7 +33,7 @@ public class Main {
     }
 
     public static void leaderboard(String titolo, String placeholder, String colorep, boolean colori) {
-        if (tipo.contains("1")) { //fancyholo
+        if (tipo.contains("1")) {
             System.out.println("    - '" + titolo + "'");
             String prefix = "";
             for (int posizione = 1; 10 >= posizione; posizione++) {
@@ -57,10 +57,11 @@ public class Main {
                 System.out.println(linea);
 
             }
-            System.out.println("    - '&f'");
-            System.out.println("    - '" + prefix + "%ajlb_position_" + placeholder + "_alltime% &f- %player_name% "+colorep+"%ajlb_value_" + placeholder + "_alltime%'");
+            System.out.println("    - '" + prefix + "%ajlb_position_" + placeholder + "_alltime% &f- %player_name% "+colorep+"%ajlb_value_" + placeholder + "_alltime%");
 
-        } else if (tipo.contains("2")) { //decenholo
+
+
+        } else if (tipo.contains("2")) {
             System.out.println("  - content: '"+titolo+"'\n    height: 0.3");
             String prefix = "";
             for (int posizione = 1; 10 >= posizione; posizione++) {
